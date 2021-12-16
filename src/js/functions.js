@@ -199,24 +199,24 @@ $(function(){
 		    })
 	}
 
-	if( $('#anchor4').length ) {
-		inView('#anchor4')
+	if( $('#AboutUs').length ) {
+		inView('#AboutUs')
 		    .on('enter', function(el){
 		    	$('.wrapp_navigation .item button, header .item button').removeClass('active')
 		    	$('.wrapp_navigation .item:eq(3) button, header .item:eq(1) button').addClass('active')
 		    })
 	}
 
-	if( $('#anchor5').length ) {
-		inView('#anchor5')
+	if( $('#Carpark').length ) {
+		inView('#Carpark')
 		    .on('enter', function(el){
 		    	$('.wrapp_navigation .item button, header .item button').removeClass('active')
 		    	$('.wrapp_navigation .item:eq(4) button, header .item:eq(2) button').addClass('active')
 		    })
 	}
 
-	if( $('#anchor6').length ) {
-		inView('#anchor6')
+	if( $('#Advantages').length ) {
+		inView('#Advantages')
 		    .on('enter', function(el){
 		    	$('.wrapp_navigation .item button, header .item button').removeClass('active')
 		    	$('.wrapp_navigation .item:eq(5) button, header .item:eq(4) button').addClass('active')
@@ -231,8 +231,8 @@ $(function(){
 		    })
 	}
 
-	if( $('#anchor8').length ) {
-		inView('#anchor8')
+	if( $('#Steps').length ) {
+		inView('#Steps')
 		    .on('enter', function(el){
 		    	$('.wrapp_navigation .item button, header .item button').removeClass('active')
 		    	$('.wrapp_navigation .item:eq(7) button, header .item:eq(6) button').addClass('active')
@@ -255,24 +255,24 @@ $(function(){
 		    })
 	}
 
-	if( $('#anchor11').length ) {
-		inView('#anchor11')
+	if( $('#Security').length ) {
+		inView('#Security')
 		    .on('enter', function(el){
 		    	$('.wrapp_navigation .item button, header .item button').removeClass('active')
 		    	$('.wrapp_navigation .item:eq(10) button, header .item:eq(3) button').addClass('active')
 		    })
 	}
 
-	if( $('#anchor12').length ) {
-		inView('#anchor12')
+	if( $('#Team').length ) {
+		inView('#Team')
 		    .on('enter', function(el){
 		    	$('.wrapp_navigation .item button, header .item button').removeClass('active')
 		    	$('.wrapp_navigation .item:eq(11) button, header .item:eq(5) button').addClass('active')
 		    })
 	}
 
-	if( $('#anchor13').length ) {
-		inView('#anchor13')
+	if( $('#Reviews').length ) {
+		inView('#Reviews')
 		    .on('enter', function(el){
 		    	$('.wrapp_navigation .item button, header .item button').removeClass('active')
 		    	$('.wrapp_navigation .item:eq(12) button, header .item:eq(7) button').addClass('active')
@@ -287,8 +287,8 @@ $(function(){
 		    })
 	}
 
-	if( $('#anchor15').length ) {
-		inView('#anchor15')
+	if( $('#tariffs').length ) {
+		inView('#tariffs')
 		    .on('enter', function(el){
 		    	$('.wrapp_navigation .item button, header .item button').removeClass('active')
 		    	$('.wrapp_navigation .item:eq(14) button, header .item:eq(7) button').addClass('active')
