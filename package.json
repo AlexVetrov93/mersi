@@ -5,20 +5,22 @@
   "author": "terehov",
   "license": "",
   "dependencies": {
+    "browser-sync": "^2.26.12",
+    "del": "^5.1.0",
     "gulp": "^4.0.0",
-    "gulp-sass": "^4.1.0",
-    "gulp-sourcemaps": "^2.6.5",
     "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.3.0",
     "gulp-cssmin": "^0.2.0",
-    "gulp-rigger": "^0.5.8",
+    "gulp-file-include": "^2.2.2",
     "gulp-minify": "^3.1.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-plumber": "^1.2.1",
     "gulp-rename": "^2.0.0",
     "gulp-replace": "^1.0.0",
-    "gulp-plumber": "^1.2.1",
-    "del": "^5.1.0",
-    "browser-sync": "^2.26.12",
-    "gulp-file-include": "^2.2.2",
-    "gulp-newer": "^1.4.0",
-    "gulp-watch": "^5.0.1"
+    "gulp-rigger": "^0.5.8",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-watch": "^5.0.1",
+    "gulp-htmlmin": "^5.0.1"
   }
 }

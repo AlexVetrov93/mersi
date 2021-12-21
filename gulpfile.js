@@ -15,7 +15,8 @@ const del = require('del');
 const browsersync = require('browser-sync').create();
 const fileinclude = require('gulp-file-include');
 const newer = require('gulp-newer');
-const gulpwatch = require('gulp-watch')
+const gulpwatch = require('gulp-watch');
+const htmlmin = require('gulp-htmlmin');
 
 
 
@@ -80,6 +81,7 @@ function html() {
             prefix: '@@',
             basepath: 'src/html_includes/'
         }))
+        .pipe(htmlmin({ collapseWhitespace: true }))
         .pipe(gulp.dest(path.build.html))
         .pipe(browsersync.stream());
 }
@@ -108,6 +110,7 @@ function css() {
         .pipe(sourcemaps.init())
         .pipe(sass({ outputStyle: 'expanded' }))
         .pipe(sourcemaps.write())
+        .pipe(cssmin())
         .pipe(rename('style.css'))
         .pipe(replace('../../', '../'))
         .pipe(gulp.dest(path.build.css))
@@ -121,6 +124,7 @@ function js() {
             .src(path.src.js)
             .pipe(plumber())
             .pipe(rigger())
+            .pipe(minify())
             .pipe(gulp.dest(path.build.js))
             .pipe(browsersync.stream())
     );

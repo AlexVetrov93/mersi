@@ -13,7 +13,7 @@ $(function(){
 	}
 
 	if ($(window).width() < 1025) {
-		$('.dropdown > a').on('click', function (e) {
+		$('.dropdown > a,button').on('click', function (e) {
 		  e.preventDefault();
 		  var $this = $(this);
 		  $this.toggleClass('is-open');
@@ -21,15 +21,8 @@ $(function(){
 		})
 	  } 
 
-	  if ($(window).width() ) {
-		$('.drop > button').on('click', function (e) {
-		  e.preventDefault();
-		  var $this = $(this);
-		  $this.toggleClass('is-open');
-		  $this.next('.tabs__wrapp').slideToggle();
-		})
-	  } 
 
+	  
 
 	setTimeout(function(){
 		// Ленивая загрузка

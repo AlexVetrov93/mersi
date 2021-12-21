@@ -1080,6 +1080,19 @@
     /*---------------
         Main styles
 	---------------*/
+
+    .advantages--transfer .main_title br {
+        display: inherit;
+    }
+
+    .reputation__wrapper .main_title br {
+        display: inherit;
+    }
+
+    .box--superimposition-rent .main_title br {
+        display: inherit;
+    }
+
     .choice {
         padding-top: 70px;
     }
@@ -1467,9 +1480,8 @@
     }
 
 
-    .main_title br
-    {
-        display: none;
+    .reviews--escort br {
+        display: inherit;
     }
 
 
@@ -2153,7 +2165,7 @@
 
     .views {
         padding-top: 70px;
-        padding-bottom: 70px;
+        padding-bottom: 30px;
     }
 
     .tariffs__content {
@@ -2178,7 +2190,24 @@
         margin-top: 60px;
     }
 
-    
+    .box--rent .main_title {
+        line-height: 45px;
+    }
+
+    .way .main_title span {
+        br {
+            display: unset;
+        }
+    }
+  
+    .list {
+        padding-bottom: 30px;
+    }
+
+    .reviews--escort {
+        padding-top: 30px;
+        box-shadow: 0px 2px 32.9px 2.1px #ededed;
+    }
 
     .first_section--transfer {
         margin-bottom: 0;
@@ -2244,11 +2273,11 @@
         margin-left: 0;
     }
     .choice .slider-button-next.mob {
-        right: 10px;
+        right: 120px;
     }
 
     .choice .slider-button-prev.mob {
-        left: 10px;
+        left: 120px;
     }
 
     .modal--two-col .modal_title-wrapp {
@@ -2262,7 +2291,9 @@
     }
 
     .tariffs {
+        position: relative;
         padding-top: 40px;
+        box-shadow: 0px 2px 32.9px 2.1px #ededed;
     }
 
     .tariffs__item p {
@@ -2311,10 +2342,16 @@
 
     .views__name {
         font-size: 22px;
+        line-height: 25px;
     }
     .car_park__menu {
         max-width: 615px;
     }
+
+    .car_park--rent {
+        padding-top: 50px;
+    }
+
 
     .car_park__radio {
         max-width: 270px;
@@ -2337,7 +2374,21 @@
 
     .main_title {
         font-size: 35px;
+       
     }
+    .quality .main_title {
+        line-height: 45px;
+    }
+
+    .travel {
+        padding-top: 60px;
+    }
+
+    .comfort {
+        padding-top: 60px;
+        padding-bottom: 70px;
+    }
+   
 
     .contacts .box_contacts .desc {
         font-size: 20px;
@@ -2380,6 +2431,15 @@
     /*---------------
         Main styles
     ---------------*/
+
+
+
+    .way .main_title span {
+        br {
+            display: none;
+        }
+    }
+
     .choice {
         padding-top: 50px;
     }
@@ -3005,6 +3065,7 @@
     .slider-button-next.mob
     {
         display: flex;
+        opacity: 1;
     }
 
     /*---------------
@@ -4354,6 +4415,14 @@
         width: 90%;
     }
 
+    .reviews--escort .main_title {
+        max-width: 350px;
+    }
+
+    .item.swiper-slide:hover {
+        z-index:1;
+    }
+    
 
     .tariffs .item {
         display: block;
@@ -4450,12 +4519,12 @@
     }
 
     .list__text span::before {
-        width: 200px;
+        width: 185px;
         right: 100px;
     }
 
     .list .list__text .list__small::before {
-        width: 200px;
+        width: 185px;
         right: 100px;
     }
 
@@ -4585,6 +4654,50 @@
         margin-top: 20px;
     }
 
+    .choice__table-item {
+        flex-wrap: wrap;
+    }
+
+    .choice__table-item {
+        height: 120px;
+    }
+
+    .choice__table-item {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .choice__table-item p {
+        width: 100%;
+        padding-left: 10px;
+    }
+
+    .choice__table-item:hover::before {
+        top: 60px;
+    }
+
+    .choice .item {
+        height: 120px;
+    }
+
+    .choice .item {
+        margin-bottom: 0;
+    }
+
+    .choice .swiper-container.swiper-container-initialized {
+        height: 510px;
+    }
+
+    .choice__popup .tabs__wrapper {
+        left: 56px; 
+    }
+
+    .services .main_title {
+        letter-spacing: -1px;  
+    }
+
 }
 
 @media (max-width: 375px)
@@ -4592,6 +4705,34 @@
     /*---------------
         Main styles
 	---------------*/
+
+    
+
+    .main_title--categories br {
+        display: none;
+    }
+
+    .box--superimposition br {
+        display: none;
+    }
+
+    .car_park--rent .main_title {
+        max-width: 250px;
+    }
+
+    .choice .main_title {
+        max-width: 300px;
+    }
+
+
+    .choice__table-item p {
+        padding-left: 5px;
+    }
+
+    .choice__table-item p {
+        font-size: 15px;
+    }
+    
 
     .quality__description {
         font-size: 25px;
@@ -4635,7 +4776,11 @@
     }
 
     .choice .swiper-container.swiper-container-initialized {
-        height: 485px;
+        height: 515px;
+    }
+
+    .choice .item {
+        margin-bottom: 0;
     }
 
     .contacts .box_contacts {
@@ -4670,7 +4815,7 @@
     }
 
     .choice__popup .tabs__wrapper {
-        left: -77px; 
+        left: 42px; 
     }
 
     .choice__popup:hover .tabs__wrapper {
@@ -4703,10 +4848,6 @@
         padding-left: 0;
     }
 
-    .choice__table-item p {
-        font-size: 15px;
-        width: 122px;
-    }
 
     .choice__table-item span {
         font-size: 22px;
@@ -4714,7 +4855,7 @@
     }
 
     .choice__table {
-        margin-bottom: 10px;
+        margin-top: 30px;
     }
 
     .choice__step:last-child {
@@ -4794,6 +4935,10 @@
     .tariffs__item p {
         max-width: 100%;
         margin-right: 0;
+    }
+
+    .tariffs__item--short p {
+        max-width: 230px;
     }
 
     .tariffs__item span {
@@ -4894,6 +5039,23 @@
 
     .tariffs__item p {
         line-height: 22px;
+
+        br {
+            display: none;
+        }
+    }
+
+    .tariffs__item {
+        height: 140px;
+    }
+
+    .tariffs .swiper-container.swiper-container-initialized {
+        height: 580px;
+    }
+
+    .box--rent .main_title {
+        font-size: 35px;
+        line-height: 40px;
     }
 
     .tariffs {
@@ -4961,10 +5123,12 @@
     }
 
     .list__text span::before {
+        width: 200px;
         right: 70px;
     }
 
     .list .list__text .list__small::before {
+        width: 200px;
         right: 70px;
     }
 
@@ -5066,6 +5230,7 @@
         min-width: 140px;
     }
 
+
     /*---------------
         Footer
 	---------------*/
@@ -5082,6 +5247,23 @@
 }
 
 @media (max-width: 320px) {
+
+    .choice .main_title, .contacts .box_contacts {
+        max-width: 260px;
+    }
+
+    .tariffs__item p {
+        max-width: 91%;
+        margin-right: 0;
+    }
+
+    .tariffs .item {
+        height: 140px;
+    }
+
+    .tariffs .swiper-container.swiper-container-initialized {
+        height: 520px;
+    }
 
     .section_form .box .desc {
         font-size: 15px;
@@ -5106,10 +5288,6 @@
     .reviews--escort .slider-button-prev.top, .reviews--escort .slider-button-next.top {
         width: 50px;
         height: 50px;
-    }
-
-    .choice .plus::before {
-        top: -3px;
     }
 
     .way .slider-pagination.mob_pagination {
@@ -5138,24 +5316,15 @@
         line-height: 37px;
     }
 
-    .choice__table-item {
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-top: 15px;
-        padding-bottom: 15px;
-    }
-
+    
     .choice .swiper-container.swiper-container-initialized {
-        height: 565px;
+        height: 520px;
     }
 
     .choice .item {
         height: 120px;
     }
 
-    .choice__table-item {
-        height: 120px;
-    }
 
     .confidentiality span {
         width: 86%;
@@ -5170,25 +5339,13 @@
         display: none;
     }
 
-    .choice__table-item {
-        flex-wrap: wrap;
-    }
-
     .choice__gratitude-content .icon {
         align-items: baseline;
         padding-top: 12px;
     }
 
-    .choice__table-item p {
-        width: 100%;
-    }
-
-    .choice__table-item:hover::before {
-        top: 71px;
-    }
-
     .choice__popup .tabs__wrapper {
-        left: 31px;
+        left: 26px;
     }
 
     .choice .slider-button-prev.mob {

@@ -548,16 +548,16 @@ $(window).load(function(){
 
 
 $(window).resize(function () {
-	if ( $width_page < $(window).width() || $width_page > $(window).width() ) {
-		setTimeout(function(){
-			$width_page = $(window).width()
-		},10)
+	// if ( $width_page < $(window).width() || $width_page > $(window).width() ) {
+	// 	setTimeout(function(){
+	// 		$width_page = $(window).width()
+	// 	},10)
 
-		// Выравнивание элементов в сетке
-		$('.advantages .grid').each(function() {
-			advantagesHeight($(this), parseInt($(this).css('--advantages_count')))
-		})
-	}
+	// 	// Выравнивание элементов в сетке
+	// 	$('.advantages .grid').each(function() {
+	// 		advantagesHeight($(this), parseInt($(this).css('--advantages_count')))
+	// 	})
+	// }
 
 	if ($('.car_park .wrapp_grid').length) {
 		slider()
