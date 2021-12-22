@@ -16,7 +16,6 @@ const browsersync = require('browser-sync').create();
 const fileinclude = require('gulp-file-include');
 const newer = require('gulp-newer');
 const gulpwatch = require('gulp-watch');
-const htmlmin = require('gulp-htmlmin');
 
 
 
@@ -81,7 +80,6 @@ function html() {
             prefix: '@@',
             basepath: 'src/html_includes/'
         }))
-        .pipe(htmlmin({ collapseWhitespace: true }))
         .pipe(gulp.dest(path.build.html))
         .pipe(browsersync.stream());
 }

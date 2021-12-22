@@ -652,7 +652,8 @@ body.lock
     font-family: var(--font_family2);
     font-weight: 700;
     font-size: 50px;
-    line-height: 1;
+    line-height: 1.2;
+    letter-spacing: -0.1px;
 
     text-transform: uppercase;
 
@@ -3208,8 +3209,8 @@ header.fixed {
 
 .safety .box
 {
-    width: 67%;
-    max-width: 865px;
+    width: 70%;
+    max-width: 915px;
 }
 
 .safety .title
@@ -3450,7 +3451,7 @@ header.fixed {
 
 .section_form .box.box2
 {
-    width: calc(55% + 2px);
+    width: calc(55.5% + 2px);
     padding-left: 50px;
     padding-right: 50px;
 
@@ -6548,3 +6549,6 @@ header .menu .tabs__wrapper,.tabs__wrapp {
     top: 45px;
 }
 
+.about .main_title wbr {
+    display: none;
+}

@@ -669,6 +669,7 @@
         max-width: 590px;
         top: 49%;
     }
+
     .comfort .grid .item {
         max-width: 45%;
         margin-right: 0;
@@ -1080,6 +1081,15 @@
     /*---------------
         Main styles
 	---------------*/
+
+    .approach--second {
+        padding-top: 70px;
+        padding-bottom: 80px;
+    }
+
+    .reputation {
+        padding-top: 60px;
+    }
 
     .advantages--transfer .main_title br {
         display: inherit;
@@ -2190,6 +2200,11 @@
         margin-top: 60px;
     }
 
+    .reviews--escort {
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+
     .box--rent .main_title {
         line-height: 45px;
     }
@@ -2432,7 +2447,49 @@
         Main styles
     ---------------*/
 
+    .choice .main_title {
+        max-width: 555px;
+    }
 
+    .choice .main_title span {
+        display: unset;
+    }
+
+    .choice .main_title br {
+        display: none;
+    }
+
+    .car_park--transfer .main_title {
+        max-width: 580px;
+    }
+
+    .car_park--rent .main_title {
+        max-width: 580px;
+    }
+
+    .main_title--mob br {
+        display: none;
+    }
+
+    .box--transfer .main_title br:nth-of-type(2) {
+        display: none;
+    }
+
+    .reviews--escort .slider-button-next.top, .reviews--escort .slider-button-prev.top {
+        display: flex;
+        width: 50px;
+        height: 50px;
+    }
+
+    .reviews--escort .slider-pagination.mob_pagination {
+        bottom: 0px;
+    }
+
+    .reviews--escort .swiper-slide-visible.swiper-slide-active::before {
+        left: -275px;
+        width: 780px;
+        height: 150px;
+    }
 
     .way .main_title span {
         br {
@@ -2451,10 +2508,6 @@
     .reviews--escort .way__item {
         max-width: 220px;
         margin: 0 auto;
-    }
-
-    .reviews--escort .swiper-slide-visible.swiper-slide-active::before {
-        display: none;
     }
 
     .tariffs .slider-button-prev.swiper-button-disabled, .slider-button-next.swiper-button-disabled {
@@ -2839,10 +2892,6 @@
     }
 
 
-    .comfort {
-        padding-top: 60px;
-        padding-bottom: 70px;
-    }
     .comfort .item .name {
         font-size: 17px;
     }
@@ -4415,6 +4464,26 @@
         width: 90%;
     }
 
+    .choice .main_title span {
+        display: block;
+    }
+
+    .section_form .box .main_title {
+        margin-bottom: 20px;
+    }
+
+    .box--rent .main_title.mob {
+        margin-bottom: 20px;
+    }
+
+    .views .slider-pagination.mob_pagination {
+        margin-top: 22px;
+    }
+
+    .choice__step {
+        padding-right: 80px;
+    }
+
     .reviews--escort .main_title {
         max-width: 350px;
     }
@@ -4706,6 +4775,43 @@
         Main styles
 	---------------*/
 
+    .choice .main_title {
+        letter-spacing: -0.4px;
+    }
+
+    .section_steps .main_title br {
+        display:none;
+        letter-spacing: -0.5px;
+    }
+
+    .section_form .box .main_title {
+        letter-spacing: -1px;
+    }
+
+    .you_are_getting .main_title {
+        letter-spacing: -1px;
+    }
+
+    .advantages .main_title {
+        letter-spacing: -1px;
+    }
+
+    .wrapp_safety .cont {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .about .main_title br {
+        display: none;
+    }
+
+    .list .main_title br:first-child {
+        display: none;
+    }
+
+    .box--rent .desc br {
+        display: none;
+    }
     
 
     .main_title--categories br {
@@ -4789,6 +4895,7 @@
 
     .section_form--ipad .main_title.mob {
         font-size: 30px;
+        margin-bottom: 0;
     }
 
     .categories .slider-pagination {
@@ -4837,7 +4944,7 @@
     }
 
     .choice .line-blue::before {
-        width: 100px;
+        width: 86px;
     }
 
     .choice__table-item:hover {
@@ -4864,11 +4971,11 @@
     }
 
     .choice .line-gray::before {
-        width: 100px;
+        width: 82px;
     }
 
     .choice__step {
-        padding-right: 75px;
+        padding-right: 55px;
     }
 
 
@@ -4989,9 +5096,6 @@
         max-width: 290px;
     }
 
-    .reviews--escort  {
-        padding-top: 50px;
-    }
 
     .reviews--escort  .main_title {
         padding-bottom: 40px;
@@ -5004,6 +5108,10 @@
 
     .quality__content {
         margin-bottom: 30px;
+    }
+
+    .quality__content--escort {
+        margin-bottom: 0;
     }
 
     .views .main_title.mob {
@@ -5071,7 +5179,7 @@
     }
 
     .comfort .main_title {
-        font-size: 23px;
+        font-size: 35px;
         text-align: left;
     }
 
@@ -5248,6 +5356,11 @@
 
 @media (max-width: 320px) {
 
+    .comfort {
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+
     .choice .main_title, .contacts .box_contacts {
         max-width: 260px;
     }
@@ -5365,7 +5478,7 @@
     }
 
     .choice__step {
-        padding-right: 55px;
+        padding-right: 45px;
     }
 
     .choice__step:last-child {

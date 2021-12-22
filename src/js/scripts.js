@@ -158,6 +158,7 @@ $(function(){
 					watchOverflow: true,
 					watchSlidesVisibility: true,
 					loopAdditionalSlides: 1,
+					centeredSlides: true
 				},
 
 				'424': {
@@ -167,27 +168,30 @@ $(function(){
 					watchOverflow: true,
 					watchSlidesVisibility: true,
 					loopAdditionalSlides: 1,
+					centeredSlides: true
 				},
 
 
 				'550': {
-					spaceBetween: 100,
+					spaceBetween: 0,
 					slidesPerView: 2,
 					loop: true,
 					watchOverflow: true,
 					watchSlidesVisibility: true,
 					loopAdditionalSlides: 1,
+					centeredSlides: true
 				},
 
 
 
 				'767': {
 					spaceBetween: 60,
-					slidesPerView: 3,
+					slidesPerView: 2.7,
 					loop: true,
 					watchOverflow: true,
 					watchSlidesVisibility: true,
 					loopAdditionalSlides: 1,
+					centeredSlides: true
 				},
 
 				'1000': {

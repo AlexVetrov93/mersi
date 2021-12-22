@@ -21,9 +21,6 @@ $(function(){
 		})
 	  } 
 
-
-	  
-
 	setTimeout(function(){
 		// Ленивая загрузка
 		observer = lozad('.lozad:not(.loaded)', {
