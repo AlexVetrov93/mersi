@@ -66,6 +66,14 @@
         margin-left: 40px;
     }
 
+    .quality--escort {
+        padding-bottom: 20px;
+    }
+
+    .quality__bottom br {
+        display: none;
+    }
+
     .travel img {
         max-width: 800px;
         top: 40%;
@@ -227,10 +235,6 @@
     .travel img {
         max-width: 700px;
         top: 45%;
-    }
-
-    .comfort .grid {
-        justify-content: space-between;
     }
 
     .comfort .grid .item {
@@ -1082,6 +1086,52 @@
         Main styles
 	---------------*/
 
+    header .menu .item:hover::before {
+        display: none;
+    }
+
+    header .scroll_link--arrow a:hover .header__link-img::after {
+        top: 24px;
+    }
+
+    .quality--escort .quality__content {
+        margin-bottom: 0;
+    }
+
+    header .scroll_link--arrow .is-open:hover .header__link-img::after {
+        top: 24px;
+        transform: rotate(-135deg);
+    }
+
+    .car_park__text {
+        max-width: 350px;
+        margin-right: 20px;
+
+        br {
+            display: none;
+        }
+    }
+
+    .box--rent .main_title {
+        line-height: 50px;
+    }
+
+    .list .main_title br {
+        display: none;
+    }
+
+    .reviews .main_title br {
+        display: none;
+    }
+
+    .partners .main_title br {
+        display: none;
+    }
+
+    .services .main_title br {
+        display: none;
+    }
+
     .approach--second {
         padding-top: 70px;
         padding-bottom: 80px;
@@ -1311,8 +1361,6 @@
         object-fit: cover;
     }
 
-
-
     .reviews--escort .slider-button-prev.top, .reviews--escort .slider-button-next.top {
         display: flex;
         top: auto;
@@ -1438,7 +1486,8 @@
     }
 
     .quality--transfer .quality__wrapper {
-        justify-content: start;
+        justify-content: center;
+        align-items: center;
     }
 
     .quality--transfer .quality__content img {
@@ -1643,6 +1692,11 @@
         display: flex;
     }
 
+    .services .slider-pagination.mob_pagination
+    {
+        display: none;
+    }
+
     .slider-pagination.mob_pagination
     {
         display: flex;
@@ -1746,6 +1800,10 @@
         margin-top: 0;
     }
 
+    .advantages_small--rent .item:nth-of-type(5) {
+        min-width: 185px;
+    }
+
     .advantages_small .item + .item
     {
         margin-left: 40px;
@@ -1761,10 +1819,6 @@
         display: none;
     }
 
-    .services .slider
-    {
-        padding-right: 150px;
-    }
 
     .services .slider .swiper-slide
     {
@@ -2200,6 +2254,38 @@
         margin-top: 60px;
     }
 
+    .main_title--escort {
+        max-width: 600px;
+    }
+
+    .main_title--third {
+        max-width: 620px;
+    }
+
+    .approach--transfer .main_title br {
+        display: none;
+    }
+
+    .main_title--short {
+        max-width: 620px;
+    }
+
+    .advantages--transfer .main_title br {
+        display: none;
+    }
+
+    .tariffs__blue p {
+        text-align: center;
+    }
+
+    .box--transfer .main_title br {
+        display:none;
+    }
+
+    .quality--transfer .quality__wrapper {
+        justify-content: start;
+    }
+
     .reviews--escort {
         padding-top: 40px;
         padding-bottom: 50px;
@@ -2322,6 +2408,10 @@
         padding-bottom: 20px;
     }
 
+    .quality--transfer {
+        padding-bottom: 0;
+    }
+
     .quality__content--escort {
         margin-bottom: 0;
     }
@@ -2438,6 +2528,10 @@
         display: none;
     }
 
+    .choice .main_title span {
+        display: unset;
+    }
+
 }
 
 
@@ -2447,16 +2541,37 @@
         Main styles
     ---------------*/
 
-    .choice .main_title {
-        max-width: 555px;
+    .services .slider-pagination.mob_pagination {
+        display: flex;
     }
 
-    .choice .main_title span {
-        display: unset;
+    .ymaps-map {
+        height: 900px;
     }
 
-    .choice .main_title br {
+    .about .main_title span br {
         display: none;
+    }
+
+    .safety .title {
+        max-width: 100%;
+    }
+
+    .about .main_title br {
+        display: none;
+    }
+
+
+    .reviews--escort .main_title br {
+        display: none;
+    }
+
+    .section_steps--white .main_title br {
+        display:none;
+    }
+
+    .choice .main_title {
+        letter-spacing: -0.3px;
     }
 
     .car_park--transfer .main_title {
@@ -2651,7 +2766,7 @@
     }
 
     .tariffs .swiper-container.swiper-container-initialized {
-        height: 405px;
+        height: 380px;
     }
 
     .tariffs .item {
@@ -2788,6 +2903,7 @@
     .section_form .box {
         width: 80%;
         margin: 0 auto;
+        text-align: left;
     }
 
     .box--rent .main_title {
@@ -2848,6 +2964,7 @@
     .tariffs__item p {
         max-width: 510px;
         font-size: 16px;
+        line-height: 25px;
     }
 
     .confidentiality__title {
@@ -3496,7 +3613,7 @@
 
     .section_form .form .submit .submit_btn
     {
-        max-width: 50%;
+        max-width: 350px;
     }
 
 
@@ -3692,11 +3809,33 @@
 
 }
 
+@media (max-width: 760px) {
+    .choice .main_title br {
+        display: none;
+    }
+}
+
+@media (max-width: 667px) {
+
+    .about .main_title span br {
+        display: none;
+    }   
+}
+
 @media (max-width: 479px)
 {
     /*---------------
         Main styles
 	---------------*/
+
+    .list .list__text .list__small::before {
+        width: 110px;
+        right: 50px;
+    }
+
+    .list__text span::before {
+        width: 110px;
+    }
 
     .choice .slider-button-next.mob {
         right: 0;
@@ -4464,6 +4603,10 @@
         width: 90%;
     }
 
+    .quality__bottom br {
+        display:none;
+    }
+
     .choice .main_title span {
         display: block;
     }
@@ -4673,10 +4816,6 @@
         max-width: 100%;
     }
 
-    .car_park__text br {
-        display: none;
-    }
-
     .advantages_small--transfer .item--transfer {
         max-width: 155px;
         padding-left: 0;
@@ -4700,6 +4839,7 @@
 
     .section_form .form .submit .submit_btn {
         max-width: 100%;
+        width: 100%;
     }
 
     .about .info .bot .main_btn {
@@ -4774,6 +4914,33 @@
     /*---------------
         Main styles
 	---------------*/
+
+    
+
+    .section_form .form .submit .submit_btn {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .you_are_getting .item .desc {
+        max-width: 245px;
+        margin: 0 auto;
+        margin-top: 15px;
+    }
+
+    .you_are_getting .item .desc--index {
+        max-width: 100%;
+    }
+
+
+    .you_are_getting .title {
+        text-align: left;
+        letter-spacing: -0.3px;
+    }
+
+    .info--index {
+        max-width: 290px;
+    }
 
     .choice .main_title {
         letter-spacing: -0.4px;
@@ -5192,7 +5359,6 @@
     }
 
     .comfort .item .name {
-        text-align: left;
 
         & br {
             display: none;
@@ -5359,6 +5525,10 @@
     .comfort {
         padding-top: 40px;
         padding-bottom: 50px;
+    }
+
+    .section_form .form .submit .submit_btn {
+        font-size: 12px;
     }
 
     .choice .main_title, .contacts .box_contacts {

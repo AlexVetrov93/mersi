@@ -453,3 +453,12 @@ document.addEventListener('load', document.addEventListener('load', function(eve
 		}, 2000)
 	})
 }));
+
+const defaultSelect = () => {
+	const element = document.querySelector('.eco');
+ 	const choices = new Choices(element, {
+		searchEnabled: false,
+	 });
+}
+
+defaultSelect();

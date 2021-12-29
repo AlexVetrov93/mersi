@@ -6,3 +6,4 @@
 //= vendor/in-view.min.js
 //= vendor/lozad.min.js
 //= vendor/swiper-bundle.min.js
+//= vendor/choices.min.js

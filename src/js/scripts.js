@@ -461,7 +461,7 @@ $(window).load(function(){
 			breakpoints: {
 				'320': {
 					spaceBetween: 20,
-					slidesPerView: 1
+					slidesPerView: 1,
 				},
 				// '424': {
 				// 	spaceBetween: 20,
@@ -473,7 +473,8 @@ $(window).load(function(){
 				},
 				'768': {
 					spaceBetween: 20,
-					slidesPerView: 2
+					slidesPerView: 2.5,
+					loopAdditionalSlides: 1
 				},
 				'1025': {
 					spaceBetween: 20,
@@ -885,7 +886,12 @@ function slider5(){
 					autoHeight: false,
 				},
 
-				
+				'680': {
+					spaceBetween: 20,
+					slidesPerView: 1,
+					slidesPerColumn:3,
+					autoHeight: false,
+				},
 
 			},
 
@@ -935,15 +941,19 @@ function slider6(){
 					autoHeight: false
 				},
 
-				'769': {
+				'600': {
+					spaceBetween: 20,
+					slidesPerView: 1,
+					slidesPerColumn:3,
+					autoHeight: false
+				},
+
+				'767': {
 					spaceBetween: 20,
 					slidesPerView: 1,
 					slidesPerColumn:3,
 					autoHeight: false
 				}
-
-				
-
 			},
 
 			navigation: {

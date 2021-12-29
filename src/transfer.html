@@ -40,7 +40,7 @@
 
 		<!-- Подключение файлов стилей -->
 		
-
+		<link rel="stylesheet" href="css/choices.min.css">
 		<link rel="stylesheet" href="css/style.css">
 
 		
@@ -381,19 +381,17 @@
 
 						<div class="choice__text" data-aos="fade-right">
 							<p>Доставим вас в любую точку Сочи, Адлера и окрестностей от вокзала, аэропорта или другого места прибытия. Выбирайте удобный вариант — при задержке рейса ожидание бесплатно.</p>
-							<div class="choice__popup hov dropdown">
-								<button>Эконом</button>
-								<ul class="tabs__wrapper tabs__wrapper--big">
-									<a href="">Эконом </a>
-									<a href="">Комфорт</a>
-									<a href="">Комфорт +</a>
-									<a href=""> Минивен</a>
-									<a href="">Бизнес</a>
-									<a href="">Минивен Бизнес</a>
-									<a href="">Представительский класс</a>
-									<a href="">Микроавтобус </a>
-								</ul>
-							</div>
+							
+							<select name="econom" class="eco" >
+								<option value="1">Эконом</option>
+								<option value="2">Комфорт</option>
+								<option value="3">Комфорт +</option>
+								<option value="4">Минивен</option>
+								<option value="5">Бизнес</option>
+								<option value="2">Минивен Бизнес</option>
+								<option value="3">Представительский класс</option>
+								<option value="4">Микроавтобус</option>
+							</select>
 
 						</div>
 
@@ -425,11 +423,11 @@
 														<a href="">Эконом </a>
 														<a href="">Комфорт</a>
 														<a href="">Комфорт +</a>
-														<a href=""> Минивен</a>
+														<a href="">Минивен</a>
 														<a href="">Бизнес</a>
 														<a href="">Минивен Бизнес</a>
 														<a href="">Представительский класс</a>
-														<a href="">Микроавтобус </a>
+														<a href="">Микроавтобус</a>
 													</ul>
 												</div>
 												<span>1 500 ₽</span>
@@ -651,7 +649,7 @@
 								<label class="label_check">
 									<input type="checkbox" name="" >
 			
-									<span class="check_text">Нужны детские кресла</span>
+									<span class="check_text check_text--transfer">Нужны детские кресла</span>
 								</label>
 							</div>
 
@@ -729,7 +727,7 @@
 								<label class="label_check">
 									<input type="checkbox" name="">
 			
-									<span class="check_text">Нужны детские кресла</span>
+									<span class="check_text check_text--transfer">Нужны детские кресла</span>
 								</label>
 							</div>
 
@@ -1011,7 +1009,7 @@
 				<section class="approach approach--transfer">
 					<div class="cont">
 						<div class="main_title" data-aos="fade-right">
-							Начните путешествие <br> по Сочи с индивидуаль&shy;ного трансфера
+							Начните путешествие по Сочи с индивидуаль&shy;ного трансфера
 						</div>
 
 						<div class="wrap_grid"  data-aos="fade-up">
@@ -1082,7 +1080,7 @@
 				<section class="advantages advantages--transfer sector_white" id="Advantages">
 					<div class="cont">
 						<div class="main_title" data-aos="fade-right">
-							Начните путешествие <br> по Сочи с индиви&shy;дуаль&shy;ного трансфера
+							Начните путешествие по Сочи с индиви&shy;дуаль&shy;ного трансфера
 						</div>
 
 						<div class="wrapp_grid">
@@ -1161,7 +1159,7 @@
 
 					<div class="cont">
 						<div class="box" data-aos="fade-right">
-							<div class="main_title white">Транфсер <br> в адлере и сочи</div>
+							<div class="main_title white">Трансфер <br> в адлере и сочи</div>
 
 							<div class="desc">С транспортными услугами в компании «Мерси»</div>
 
@@ -1375,7 +1373,7 @@
 						</div>
 						<nav>
 							<ul class="menu flex">
-								<li class="item scroll_link--arrow  dropdown">
+								<li class="item">
 									<a href="https://verst.ruso.md/mersi2trans/index.html#2">Услуги</a>
 								</li>
 								<li class="item"><a href="https://verst.ruso.md/mersi2trans/index.html#AboutUs"> О нас</a></li>
@@ -1589,8 +1587,10 @@
 		</section>
 
 		<!-- Подключение шрифта Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Roboto:wght@500&display=swap" rel="stylesheet">
 
-		
 
 
 		<!-- Подключение javascript файлов -->
