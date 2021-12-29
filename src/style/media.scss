@@ -1075,6 +1075,11 @@
         padding: 0 30px;
     }
 
+    .choice__text p {
+        max-width: 715px;
+        width: 100%;
+    }
+
     /*---------------
        PopUp
     ---------------*/
@@ -1085,6 +1090,11 @@
     /*---------------
         Main styles
 	---------------*/
+
+    .choice__text p {
+        max-width: 650px;
+        width: 100%;
+    }
 
     header .menu .item:hover::before {
         display: none;
@@ -2254,6 +2264,11 @@
         margin-top: 60px;
     }
 
+    .choice__text p {
+        max-width: 500px;
+        width: 100%;
+    }
+
     .main_title--escort {
         max-width: 600px;
     }
@@ -2543,6 +2558,15 @@
 
     .services .slider-pagination.mob_pagination {
         display: flex;
+    }
+
+    .choice__text p {
+        max-width: 340px;
+        width: 100%;
+    }
+
+    .choices[data-type*=select-one]::after {
+        top: 26%;
     }
 
     .ymaps-map {
@@ -3828,6 +3852,23 @@
         Main styles
 	---------------*/
 
+    .choices__inner {
+        width: 200px;
+    }
+
+    .choices[data-type*=select-one]::after {
+        top: 44%;
+        right: 60%;
+    }
+
+    .choices[data-type*=select-one].is-open::after {
+        top: 55%;
+        right: 60%;
+        transform: rotate(-135deg);
+        border-right: 2px solid #2866E0;
+        border-bottom: 2px solid #2866E0;
+    }
+
     .list .list__text .list__small::before {
         width: 110px;
         right: 50px;
@@ -4603,6 +4644,14 @@
         width: 90%;
     }
 
+    .choices[data-type*=select-one]::after {
+        right: 55%;
+    }
+
+    .choices[data-type*=select-one].is-open::after {
+        right: 55%;
+    }
+
     .quality__bottom br {
         display:none;
     }
@@ -4914,7 +4963,13 @@
     /*---------------
         Main styles
 	---------------*/
+    .choices[data-type*=select-one]::after {
+        right: 45%;
+    }
 
+    .choices[data-type*=select-one].is-open::after {
+        right: 45%;
+    }
     
 
     .section_form .form .submit .submit_btn {

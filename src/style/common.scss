@@ -996,7 +996,6 @@ header .menu .scroll_link--arrow
 {
     display: inline-block;
     min-height: 50px;
-    padding-right: 15px;
     transition: .2s linear;
     position: relative;
     text-decoration: none;
@@ -1017,7 +1016,8 @@ footer .menu {
 }
 
 header .menu .item a
-{
+{   
+    padding-right: 15px;
     color: #fff;
     font: 700 18px var(--font_family);
     display: inline-block;
@@ -5784,6 +5784,11 @@ footer .policy a:hover
             }
         }
 
+        &:hover::before {
+            top: 32px;
+            transform: rotate(-135deg);
+        }
+
 
         &:hover .tabs__wrapper--big {
             top: 90px;
@@ -6645,10 +6650,6 @@ header .menu .tabs__wrapper,.tabs__wrapp {
     border: 2px solid #2866E0;
 }
 
-.is-open .choices__list--dropdown {
-    border-color: #2866E0 transparent transparent;
-    border: 2px solid #2866E0;
-}
 
 .is-open .choices__inner {
     border-color: #2866E0;
@@ -6667,8 +6668,5 @@ header .menu .tabs__wrapper,.tabs__wrapp {
     right: 28.5px;
     transform: rotate(-135deg);
     border-style: none;
-    border-color: #2866E0 transparent transparent;
-    border-right: 2px solid #2866E0;
-    border-bottom: 2px solid #2866E0;
 }
 
