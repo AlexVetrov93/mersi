@@ -1091,10 +1091,6 @@
         Main styles
 	---------------*/
 
-    .choice__text p {
-        max-width: 650px;
-        width: 100%;
-    }
 
     header .menu .item:hover::before {
         display: none;
@@ -1106,11 +1102,6 @@
 
     .quality--escort .quality__content {
         margin-bottom: 0;
-    }
-
-    header .scroll_link--arrow .is-open:hover .header__link-img::after {
-        top: 24px;
-        transform: rotate(-135deg);
     }
 
     .car_park__text {
@@ -2555,6 +2546,12 @@
     /*---------------
         Main styles
     ---------------*/
+    
+
+    .choices[data-type*=select-one].is-open::after {
+        top: 32%;
+        right: 28.5px;
+    }
 
     .services .slider-pagination.mob_pagination {
         display: flex;
@@ -3843,7 +3840,79 @@
 
     .about .main_title span br {
         display: none;
-    }   
+    } 
+    
+    .quality ul {
+        justify-content: space-between;
+    }
+
+    .quality__text {
+        width: 45%;
+    }
+
+    .quality__text br {
+        display: none;
+    }
+
+    .choice .choice__input-wrapp input {
+        max-width: 45%;
+    }
+
+    .list .list__text .list__small::before {
+        width: 150px;
+        right: 65px;
+    }
+
+    .list__text span::before {
+        width: 150px;
+        right: 65px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .travel .desc--travel {
+        padding-top: 170px;
+    }
+
+    .section_steps .main_title br {
+        display: none;
+    }
+
+}
+
+@media (max-width: 568px) {
+
+    .comfort__text::after {
+        left: 7px;
+        top: 7px;
+    }
+
+    .travel__wrapper:nth-child(4n) {
+        order: 4;
+    }
+
+    .categories .main_btn {
+        box-shadow: none;
+    }
+
+    .categories .advantages_car {
+        margin-left: -22px;
+    }
+
+    .categories .advantages_car .item {
+        margin-left: 23px;
+    }
+
+    .list__text li {
+        max-width: 253px;
+        margin-bottom: 20px;
+    }
+
+    .list .list__text .list__small::before, .list__text span::before {
+        width: 130px;
+    }
+    
 }
 
 @media (max-width: 479px)
@@ -3854,6 +3923,10 @@
 
     .choices__inner {
         width: 200px;
+    }
+
+    .travel__wrapper:nth-child(4n) {
+        order: 2;
     }
 
     .choices[data-type*=select-one]::after {
@@ -5695,11 +5768,11 @@
     }
 
     .choice .line-gray::before {
-        width: 80px;
+        width: 60px;
     }
 
     .choice .line-blue::before {
-        width: 80px;
+        width: 60px;
     }
 
     .choice__step {
@@ -5767,5 +5840,9 @@
         max-width: 405px;
         left: 40%;
         transform: translate(-49%, 0);
+    }
+
+    .line-blue {
+        padding-right: 35px;
     }
 }

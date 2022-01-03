@@ -1698,6 +1698,7 @@ header.fixed {
 .first_section
 {
     position: relative;
+    height: 1010px;
     background: #474F60;
     /* padding: 150px 0 60px; */
     padding: 228px 0 43px;
@@ -1713,13 +1714,13 @@ header.fixed {
     overflow: hidden;
 
     &--transfer {
-        height: 960px;
+        height: 1030px;
         background:none;
     }
 
     &--rent {
         padding-top: 180px;
-        height: 960px;
+        height: 1010px;
         background:none;
     }
 
@@ -1736,7 +1737,7 @@ header.fixed {
 
     &--escort {
         padding-top: 265px;
-        height: 975px;
+        height: 1015px;
         background:none;
     }
 
@@ -1780,7 +1781,52 @@ header.fixed {
 }
 
 .first_section--index .bg {
-    top: -130px;
+    top: -19px;
+    left: 50%;
+    height: 90%;
+}
+
+.first_section--index .item:nth-of-type(1) {
+    max-width: 257px;
+    width: 100%;
+}
+
+.first_section--index .item:nth-of-type(2) {
+    max-width: 177px;
+    width: 100%;
+}
+
+.first_section--index .item:nth-of-type(3) {
+    max-width: 140px;
+    width: 100%;
+}
+
+.first_section--index .item:nth-of-type(4) {
+    max-width: 212px;
+    width: 100%;
+}
+
+.first_section--index .item:nth-of-type(5) {
+    max-width: 135px;
+    width: 100%;
+}
+
+.first_section--index .advantages_small .item {
+    margin: 30px 0 0 75px;
+}
+
+.first_section--transfer .item:nth-of-type(4) {
+    max-width: 185px;
+    width: 100%;
+}
+
+.first_section--transfer .item:nth-of-type(5) {
+    max-width: 175px;
+    width: 100%;
+}
+
+.first_section--transfer .advantages_small--long .item {
+    margin: 30px 0 0 63px;
 }
 
 .first_section .bg--mob {
@@ -1801,6 +1847,7 @@ header.fixed {
 .first_section--transfer .bg {
     left: 50%;
     margin-left: 0;
+    top: -15px;
 }
 
 
@@ -5949,7 +5996,7 @@ footer .policy a:hover
         max-width: 250px;
         width: 100%;
         height: 60px;
-        padding: 0 30px;
+        padding: 10px 30px;
         transition: .2s linear;
         border: 1px solid #fff;
         background: #fff;
@@ -6575,7 +6622,8 @@ header .menu .tabs__wrapper,.tabs__wrapp {
 
     a {
         display: flex;
-        padding-bottom: 20px;
+        padding-bottom: 15px;
+        padding-right: 0;
         font-size: 18px;
         font-weight: 400;
         color: #000000;
@@ -6668,5 +6716,7 @@ header .menu .tabs__wrapper,.tabs__wrapp {
     right: 28.5px;
     transform: rotate(-135deg);
     border-style: none;
+    border-right: 2px solid #2866E0;
+    border-bottom: 2px solid #2866E0;
 }
 
