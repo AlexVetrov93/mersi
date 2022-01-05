@@ -520,6 +520,53 @@
         Main styles
 	---------------*/
 
+    .advantages_small
+    {
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        margin-top: 130px;
+        margin-left: -20px;
+        width: calc(100% + 40px);
+        padding: 0 20px 20px;
+    }
+
+    .advantages_small::-webkit-scrollbar
+    {
+        width: 3px;
+        height: 3px;
+
+        background: #E1E1E1;
+        border-radius: 4px;
+
+        -webkit-appearance: none;
+    }
+
+    .advantages_small::-webkit-scrollbar-thumb
+    {
+        width: 3px;
+        height: 3px;
+        background: #558CC9;
+        border-radius: 4px;
+    }
+
+    .advantages_small .item
+    {
+        width: 100%;
+        min-width: 160px;
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .advantages_small--rent .item:nth-of-type(5) {
+        min-width: 185px;
+    }
+
+    .advantages_small .item + .item
+    {
+        margin-left: 40px;
+    }
+
     .main_title--third {
         margin-top: 50px;
     }
@@ -1762,53 +1809,6 @@
         margin-top: 40px;
     }
 
-
-    .advantages_small
-    {
-        justify-content: flex-start;
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        margin-top: 130px;
-        margin-left: -20px;
-        width: calc(100% + 40px);
-        padding: 0 20px 20px;
-    }
-
-    .advantages_small::-webkit-scrollbar
-    {
-        width: 3px;
-        height: 3px;
-
-        background: #E1E1E1;
-        border-radius: 4px;
-
-        -webkit-appearance: none;
-    }
-
-    .advantages_small::-webkit-scrollbar-thumb
-    {
-        width: 3px;
-        height: 3px;
-        background: #558CC9;
-        border-radius: 4px;
-    }
-
-    .advantages_small .item
-    {
-        width: 100%;
-        min-width: 160px;
-        margin-left: 0;
-        margin-top: 0;
-    }
-
-    .advantages_small--rent .item:nth-of-type(5) {
-        min-width: 185px;
-    }
-
-    .advantages_small .item + .item
-    {
-        margin-left: 40px;
-    }
 
     .services
     {
@@ -5844,5 +5844,27 @@
 
     .line-blue {
         padding-right: 35px;
+    }
+}
+
+@media (max-height: 750px) and (min-width: 1000px) {
+    .first_section {
+        min-height: 790px;
+        height: 790px;
+        padding-top: 160px;
+    }
+
+    .first_section--index {
+        min-height: 750px;
+        height: 750px;
+        padding-top: 180px;
+    }
+
+    .first_section .info .title {
+        font-size: 65px;
+    }
+
+    .advantages_small {
+        margin-top: 50px;
     }
 }
