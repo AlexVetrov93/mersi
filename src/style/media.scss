@@ -205,10 +205,22 @@
         align-items: center;
         text-align: center;
     }
+
+    header .menu .item a {
+        padding-right: 0;
+    }
+
+    header .menu .scroll_link--arrow a  {
+        padding-right: 15px;
+    }
 }
 
 @media (max-width: 1369px)
 {   
+
+    .reviews--escort {
+        padding-top: 30px;
+    }
 
     .way__item--centre::before {
         width: 60%;
@@ -266,6 +278,44 @@
         padding-left: 40px;
         padding-right: 40px;
     }
+
+    .advantages_small
+    {
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        margin-top: 130px;
+        margin-left: -20px;
+        width: calc(100% + 40px);
+        padding: 0 20px 20px;
+    }
+
+    .advantages_small::-webkit-scrollbar
+    {
+        width: 3px;
+        height: 3px;
+
+        background: #E1E1E1;
+        border-radius: 4px;
+
+        -webkit-appearance: none;
+    }
+
+    .advantages_small::-webkit-scrollbar-thumb
+    {
+        width: 3px;
+        height: 3px;
+        background: #558CC9;
+        border-radius: 4px;
+    }
+
+    .advantages_small .item
+    {
+        width: 100%;
+        min-width: 160px;
+        margin-left: 0;
+        margin-top: 0;
+    }
 }
 
 @media (max-width: 1329px)
@@ -296,7 +346,6 @@
         width: 100%;
     }
 
-    
 
 }
 
@@ -520,42 +569,34 @@
         Main styles
 	---------------*/
 
-    .advantages_small
-    {
-        justify-content: flex-start;
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        margin-top: 130px;
-        margin-left: -20px;
-        width: calc(100% + 40px);
-        padding: 0 20px 20px;
+    .car_park--index {
+        max-height: 1010px;
+        height: 1010px;
     }
 
-    .advantages_small::-webkit-scrollbar
-    {
-        width: 3px;
-        height: 3px;
-
-        background: #E1E1E1;
-        border-radius: 4px;
-
-        -webkit-appearance: none;
+    .services {
+        max-height: 857px;
+        height: 857px;
     }
 
-    .advantages_small::-webkit-scrollbar-thumb
-    {
-        width: 3px;
-        height: 3px;
-        background: #558CC9;
-        border-radius: 4px;
+    .categories {
+        max-height: 1061px;
+        height: 1061px;
     }
 
-    .advantages_small .item
-    {
-        width: 100%;
-        min-width: 160px;
-        margin-left: 0;
-        margin-top: 0;
+    .partners {
+        max-height: 371px;
+        height: 371px;
+    }
+
+    .team {
+        max-height: 796px;
+        height: 796px;
+    }
+
+    .reviews {
+        max-height: 715px;
+        height: 715px;
     }
 
     .advantages_small--rent .item:nth-of-type(5) {
@@ -1137,6 +1178,53 @@
     /*---------------
         Main styles
 	---------------*/
+
+    .first_section--index .advantages_small .item {
+        margin-left: 0;
+    }
+
+    .first_section--index .advantages_small .item+.item {
+        margin-left: 30px;
+    }
+
+    .advantages_small .item {
+        min-width: 140px;
+    }
+
+    .first_section--index .item:nth-of-type(1) {
+        max-width: 170px;
+        width: 100%;
+    }
+
+    .car_park--index {
+        max-height: 845px;
+        height: 845px;
+    }
+
+    .services {
+        max-height: 721px;
+        height: 721px;
+    }
+
+    .categories {
+        max-height: 1041px;
+        height: 1041px;
+    }
+
+    .partners {
+        max-height: 321px;
+        height: 321px;
+    }
+
+    .team {
+        max-height: 741px;
+        height: 741px;
+    }
+
+    .reviews {
+        max-height: 612px;
+        height: 612px;
+    }
 
 
     header .menu .item:hover::before {
@@ -2538,6 +2626,36 @@
         display: unset;
     }
 
+    .car_park--index {
+        max-height: 782px;
+        height: 782px;
+    }
+
+    .services {
+        max-height: 714px;
+        height: 714px;
+    }
+
+    .categories {
+        max-height: 1522px;
+        height: 1522px;
+    }
+
+    .partners {
+        max-height: 294px;
+        height: 294px;
+    }
+
+    .team {
+        max-height: 735px;
+        height: 735px;
+    }
+
+    .reviews {
+        max-height: 634px;
+        height: 634px;
+    }
+
 }
 
 
@@ -2546,6 +2664,36 @@
     /*---------------
         Main styles
     ---------------*/
+
+    .car_park--index {
+        max-height: 588px;
+        height: 588px;
+    }
+
+    .services {
+        max-height: 802px;
+        height: 802px;
+    }
+
+    .categories {
+        max-height: 1381px;
+        height: 1381px;
+    }
+
+    .partners {
+        max-height: 276px;
+        height: 276px;
+    }
+
+    .team {
+        max-height: 727px;
+        height: 727px;
+    }
+
+    .reviews {
+        max-height: 655px;
+        height: 655px;
+    }
     
 
     .choices[data-type*=select-one].is-open::after {
@@ -3883,6 +4031,36 @@
 
 @media (max-width: 568px) {
 
+    .car_park--index {
+        max-height: 560px;
+        height: 560px;
+    }
+
+    .services {
+        max-height: 844px;
+        height: 844px;
+    }
+
+    .categories {
+        max-height: 1289px;
+        height: 1289px;
+    }
+
+    .partners {
+        max-height: 279px;
+        height: 279px;
+    }
+
+    .team {
+        max-height: 731px;
+        height: 731px;
+    }
+
+    .reviews {
+        max-height: 637px;
+        height: 637px;
+    }
+
     .comfort__text::after {
         left: 7px;
         top: 7px;
@@ -4313,6 +4491,7 @@
     .about
     {
         padding: 20px 0;
+        padding-top: 30px;
     }
 
     .about .wrapp_flex
@@ -4713,6 +4892,36 @@
 }
 @media (max-width: 425px) {
 
+    .car_park--index {
+        max-height: 734px;
+        height: 734px;
+    }
+
+    .services {
+        max-height: 907px;
+        height: 907px;
+    }
+
+    .categories {
+        max-height: 1317px;
+        height: 1317px;
+    }
+
+    .partners {
+        max-height: 295px;
+        height: 295px;
+    }
+
+    .team {
+        max-height: 797px;
+        height: 797px;
+    }
+
+    .reviews {
+        max-height: 706px;
+        height: 706px;
+    }
+
     .confidentiality span {
         width: 90%;
     }
@@ -4854,12 +5063,12 @@
 
     .list__text span::before {
         width: 185px;
-        right: 100px;
+        right: 15px;
     }
 
     .list .list__text .list__small::before {
         width: 185px;
-        right: 100px;
+        right: 15px;
     }
 
     .list__last br {
@@ -5031,11 +5240,49 @@
 
 }
 
+@media (max-width: 393px) {
+    .first_section--rent .bg {
+        width: calc(100% + 650px);
+        margin-left: 105px;
+    }
+}
+
 @media (max-width: 375px)
 {
     /*---------------
         Main styles
 	---------------*/
+
+    .car_park--index {
+        max-height: 700px;
+        height: 700px;
+    }
+
+    .services {
+        max-height: 940px;
+        height: 940px;
+    }
+
+    .categories {
+        max-height: 1364px;
+        height: 1364px;
+    }
+
+    .partners {
+        max-height: 308px;
+        height: 308px;
+    }
+
+    .team {
+        max-height: 859px;
+        height: 859px;
+    }
+
+    .reviews {
+        max-height: 775px;
+        height: 775px;
+    }
+
     .choices[data-type*=select-one]::after {
         right: 45%;
     }
@@ -5521,17 +5768,7 @@
     }
 
     .way {
-        padding-top: 20px;
-    }
-
-    .list__text span::before {
-        width: 200px;
-        right: 70px;
-    }
-
-    .list .list__text .list__small::before {
-        width: 200px;
-        right: 70px;
+        padding-top: 45px;
     }
 
     .cont--confidentiality {
@@ -5649,6 +5886,36 @@
 }
 
 @media (max-width: 320px) {
+
+    .car_park--index {
+        max-height: 647px;
+        height: 647px;
+    }
+
+    .services {
+        max-height: 899px;
+        height: 899px;
+    }
+
+    .categories {
+        max-height: 1414px;
+        height: 1414px;
+    }
+
+    .partners {
+        max-height: 268px;
+        height: 268px;
+    }
+
+    .team {
+        max-height: 834px;
+        height: 834px;
+    }
+
+    .reviews {
+        max-height: 755px;
+        height: 755px;
+    }
 
     .comfort {
         padding-top: 40px;
@@ -5790,12 +6057,12 @@
 
     .list__text span::before {
         width: 150px;
-        right: 70px;
+        right: 45px;
     }
 
     .list .list__text .list__small::before {
         width: 150px;
-        right: 70px;
+        right: 45px;
     }
 
     .approach--second {
@@ -5847,24 +6114,39 @@
     }
 }
 
-@media (max-height: 750px) and (min-width: 1000px) {
+@media (min-height: 750px) and (min-width: 500px) {
     .first_section {
-        min-height: 790px;
-        height: 790px;
-        padding-top: 160px;
-    }
-
-    .first_section--index {
-        min-height: 750px;
-        height: 750px;
+        min-height: 102vh;
+        height: 102vh;
         padding-top: 180px;
     }
 
-    .first_section .info .title {
-        font-size: 65px;
-    }
-
-    .advantages_small {
+    .first_section .advantages_small {
         margin-top: 50px;
     }
 }
+
+@media (min-height: 850px) and (min-width: 500px) {
+    .first_section {
+        min-height: 100vh;
+        height: 100vh;
+    }
+
+    .first_section--transfer {
+        min-height: 101vh;
+        height: 101vh;
+    }
+}
+
+@media (min-height: 850px) and (min-width: 1440px) {
+    .first_section {
+        min-height: 100vh;
+        height: 100vh;
+    }
+
+    .first_section--escort {
+        padding-top: 280px;
+    }
+
+}
+

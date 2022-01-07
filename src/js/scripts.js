@@ -1,4 +1,5 @@
 $(function(){
+
 	// Слайдер категорий
 	if ($('.categories .slider').length) {
 		new Swiper('.categories .slider', {
@@ -1061,5 +1062,10 @@ function slider7(){
 	
 	} 
 }
+
+const element = document.querySelector('.eco');
+ 	const choices = new Choices(element, {
+		searchEnabled: false,
+	 });
 
 
